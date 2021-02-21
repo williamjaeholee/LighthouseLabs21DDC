@@ -35,4 +35,6 @@ for i, j in zip(city_price, country_price):
 
 print(newlist)
 
-# Output: 
+# Output:
+
+['Dustpan', 'Garbage Bags', 'Glass Cleaner', 'Vinegar', 'Floor Cleaner', 'Paper Towels']
