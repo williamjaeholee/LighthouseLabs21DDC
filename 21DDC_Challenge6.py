@@ -7,6 +7,7 @@ There are many holes in the living room's ceiling that desperately need to be fi
 
  ---------------------------------------------------------------------------------------
 |                        Size of Hole	                                   Cost to Fix  |
+ ---------------------------------------------------------------------------------------
 |                    Small (less than 20 mm)	                              $1.30     |
 |    Medium (above or equal to 20 mm AND less than 70mm)	                  $1.60     |
 |            Large (above or equal to 70 mm)	                              $2.10     |
