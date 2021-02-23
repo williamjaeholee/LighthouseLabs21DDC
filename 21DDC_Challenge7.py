@@ -29,6 +29,8 @@ user_boxes = {'weight': [4,2,18,21,14,13],
               'box_name': ['box1','box2', 'box3', 'box4', 'box5', 'box6']
              }
 
+# bubble sort
+
 def LightesttoHeaviest(lon):
     for n in range(len(lon)-1,0,-1):
         for i in range(n):
@@ -47,7 +49,7 @@ print(lon)
 
 # OR
 
-def open_box_order(user_boxes):
+def LightesttoHeaviest(user_boxes):
     
     for i in range(len(user_boxes['weight'])):
         
@@ -60,7 +62,7 @@ def open_box_order(user_boxes):
                 
     return print(user_boxes['box_name'])
 
-open_box_order(user_boxes)
+LightesttoHeaviest(user_boxes)
 
 # Output
 
