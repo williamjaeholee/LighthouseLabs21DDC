@@ -22,6 +22,11 @@ Which year produced the most milk?
 
 # At what year and month did company x produce the most milk?
 
+#import the pandas plugin
+import pandas as pd # pd is the alias we have given to pandas.
+
+df = pd.read_csv('milk.csv')
+
 df.iloc[df['Monthly milk production: pounds per cow'].idxmax()]
 
 # Output
@@ -31,6 +36,10 @@ Monthly milk production: pounds per cow       969
 Name: 148, dtype: object
 
 # At what year and month did company x produce the least milk?
+
+import pandas as pd
+
+df = pd.read_csv('milk.csv')
 
 df.iloc[df['Monthly milk production: pounds per cow'].idxmin()]
 
