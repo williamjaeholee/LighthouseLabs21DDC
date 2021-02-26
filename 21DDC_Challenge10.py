@@ -14,22 +14,25 @@ How much revenue did the cow farm make in the year 2020?
 
 # Solution
 
-# The code below will results in the 'Total Milk Production' and 'Total Revenue' columns being filled with the appropriate values
-
 import pandas as pd
 
+# reads csv file 'milk_32.csv'
 df = pd.read_csv('milk_32.csv')
 
+# fills 'Total Milk Production column' with the product of the 'Monthly milk production: pounds per cow' and 'Number of Cows' columns
 df['Total Milk Production'] = df['Monthly milk production: pounds per cow'] * df['Number of Cows']
+
+# fills 'Total Milk Production column' with the products of the 'Total Milk Production column' and 'Price_Per_Pound' columns
 df['Total Revenue'] = df['Total Milk Production'] * df['Price_Per_Pound']
 
+# shows the last 20 indices of the table
 df.tail(n=20)
 
-# The code below will result in printing the monthly revenue of the year 2020 followed by the total revenue of 2020 from selling milk
-
+# variable assigned to all rows in the year 2020
 Twenty20 = df['Total Revenue'][155:167]
 print(Twenty20)
 
+# loops through every iteration of Twenty20 and adds them together
 count = 0
 sum = 0
 for i in Twenty20:
@@ -52,4 +55,4 @@ print(sum)
 165    14989.12
 166    15812.48
 Name: Total Revenue, dtype: float64
-202149.76
+202149.76 # Total Revenue (2020)
