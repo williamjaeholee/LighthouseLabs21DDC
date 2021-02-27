@@ -24,4 +24,4 @@ region_year_loc = region_year.loc['Albany', 2017]
 round(region_year_loc.loc['AveragePrice'], 4)
 
 # Output
-1.6378301886792455
+1.6378 # average cost of avocados in ALbany 2017
