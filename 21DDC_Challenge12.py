@@ -35,3 +35,17 @@ year  type
 Name: AveragePrice, dtype: bool
             
 # Answer: 2016 & 2017
+
+# OR -- Solution using NumPy
+
+import numpy as np
+filt = df['AveragePrice'] > 2
+filtered_df = df[filt]
+grouped_filt = filtered_df.groupby(['type'])
+conv = grouped_filt.get_group('conventional')['year'].unique()
+org = grouped_filt.get_group('organic')['year'].unique()
+print(np.intersect1d(conv, org))
+
+# Output
+
+[2016 2017]
