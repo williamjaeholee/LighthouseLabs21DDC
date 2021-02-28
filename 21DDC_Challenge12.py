@@ -33,3 +33,5 @@ year  type
 2018  conventional    False
       organic          True
 Name: AveragePrice, dtype: bool
+            
+# Answer: 2016 & 2017
