@@ -39,6 +39,7 @@ Name: AveragePrice, dtype: bool
 # OR -- Solution using NumPy
 
 import numpy as np
+
 filt = df['AveragePrice'] > 2
 filtered_df = df[filt]
 grouped_filt = filtered_df.groupby(['type'])
