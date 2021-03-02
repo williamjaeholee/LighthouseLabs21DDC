@@ -36,6 +36,7 @@ df = df.drop(columns = ['Unnamed: 0'])
 
 df.head()
 
+# filters dataframe to region 'Stellenbosch' and prints out the lenth of the list of indexes
 SB = df.groupby(['region'])
 Stellenbosch = SB.get_group('Stellenbosch')
 StellenboschValues = Stellenbosch.index.values
@@ -51,15 +52,19 @@ df['region'].value_counts()
 
 # 2. After filtering with the 2 conditions, what is the average price of wine from the Bordeaux region?
 
+# filters 'sulphates' column with given parameters
 sulp = df['sulphates'] <= 0.6
 sulphate = df[sulp]
 
+# filters 'price' column with given parameters
 prc = sulphate['price'] < 20
 price = sulphate[prc]
 
+# filters price variable to 'Bordeaux' region
 filterwithregion = price['region'] == 'Bordeaux'
 filteredwithregion = price[filterwithregion]
 
+# gets 'price' column of filterwithregion variable and prints its mean
 priceValues = filteredwithregion['price']
 print(priceValues.mean())
 
@@ -69,15 +74,19 @@ print(priceValues.mean())
 
 # 3. After filtering with the 2 conditions, what is the least expensive wine that's of the highest quality from the Okanagan Valley?
 
+# filters 'sulphates' column with given parameters
 sulp = df['sulphates'] <= 0.6
 sulphate = df[sulp]
 
+# filters 'price' column with given parameters
 prc = sulphate['price'] < 20
 price = sulphate[prc]
 
+# filters price variable to 'Okanagan Valley' region
 filterwithregion = price['region'] == 'Okanagan Valley'
 filteredwithregion = price[filterwithregion]
 
+# displays the filtered dataframe from lowest to highest price and highest to lowest quality
 filteredwithregion.sort_values(by=['price', 'quality'], ascending=[True, False])
 
 # Table outputted through sort_values(). Choose top on list.
