@@ -12,6 +12,8 @@ Note: Use the index positions of the wines as the wine names.
 
 """
 
+# ------------------------------------------------------------------------------------------------------------------------------------
+
 # Solution
 
 # 1. Which wines had a quality of 8 or higher and a residual sugar level above 5?
