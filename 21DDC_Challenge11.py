@@ -7,6 +7,8 @@ Can Dot spin a profit as an avocado farmer? Examine the data to find the average
 
 """
 
+# ------------------------------------------------------------------------------------------------------------------------------------
+
 # Solution
 
 import pandas as pd
