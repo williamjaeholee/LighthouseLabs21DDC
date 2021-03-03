@@ -12,6 +12,8 @@ Looking at recent years, Dot needs you to help them find: in which year or years
 
 """
 
+# ------------------------------------------------------------------------------------------------------------------------------------
+
 # Solution
 
 import pandas as pd
