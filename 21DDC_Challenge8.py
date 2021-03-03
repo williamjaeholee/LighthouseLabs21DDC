@@ -18,6 +18,8 @@ Which year produced the most milk?
 
 """
 
+# ------------------------------------------------------------------------------------------------------------------------------------
+
 # Solution
 
 # At what year and month did company x produce the most milk?
