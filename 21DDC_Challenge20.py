@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('boardgames.csv')
 
 plt.figure()
-plt.scatter(x=df['avg_rating'].head(1500), y=df['weight'].head(1500))
+plt.scatter(x=df['weight'].head(1500), y=df['avg_rating'].head(1500))
 plt.show()
 
 # Output
