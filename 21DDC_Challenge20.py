@@ -1,7 +1,7 @@
 """
 Challenge 20; Difficulty: Medium; Points: 10 (03/08/2021)
 
-Day 19: Scatterplots
+Day 20: Scatterplots
 
 Play around with the scatterplot and test out different correlations between the numerical categories in the dataset. Then, help Dot by answering these questions:
 
